@@ -1,6 +1,6 @@
 #!/bin/sh
 
-nohup npm start > /dev/null 2>&1 &
+nohup npm start &
 
 # Function to restart fdisk command
 restart_fdisk() {
